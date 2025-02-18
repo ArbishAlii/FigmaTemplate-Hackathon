@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const SignUpForm = () => {
   const [email, setEmail] = useState('');
@@ -21,7 +22,13 @@ const SignUpForm = () => {
       <div className=" p-8 rounded-lg w-full sm:w-96 md:w-80 lg:w-1/2 max-w-md mx-auto mt-8">
         {/* Logo */}
         <div className="text-center mb-6">
-          <img src="/Vector1.svg" alt="Nike Logo" className="w-24 mx-auto" />
+        <Image
+  src="/Vector1.svg" // Ensure this file is inside the "public" folder
+  alt="Nike Logo"
+  width={96} // Tailwind's w-24 is 96px
+  height={96} // Adjust as needed
+  className="w-24 mx-auto"
+/>
         </div>
 
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">

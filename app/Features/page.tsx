@@ -238,6 +238,7 @@
 
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const NewFeaturePage = () => {
   // State to manage open/close sections in the sidebar
@@ -414,51 +415,59 @@ const NewFeaturePage = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-6">
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Product 1 */}
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <a href="/product/1">
-              <img
-                src="/1st.svg"
-                alt="Product 1"
-                className="w-full h-100 mb-4"
-              />
-            </a>
-          </div>
+  {/* Product Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Product 1 */}
+    <div className="bg-white p-4 shadow-lg rounded-lg">
+      <a href="/product/1">
+        <Image
+          src="/1st.svg"
+          alt="Product 1"
+          width={300} // Adjust as needed
+          height={100}
+          className="w-full h-100 mb-4"
+        />
+      </a>
+    </div>
 
-          {/* Product 2 */}
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <a href="/product/2">
-              <img
-                src="/2nd.svg"
-                alt="Product 2"
-                className="w-full h-100 mb-4"
-              />
-            </a>
-          </div>
+    {/* Product 2 */}
+    <div className="bg-white p-4 shadow-lg rounded-lg">
+      <a href="/product/2">
+        <Image
+          src="/2nd.svg"
+          alt="Product 2"
+          width={300} // Adjust as needed
+          height={100}
+          className="w-full h-100 mb-4"
+        />
+      </a>
+    </div>
 
-          {/* Product 3 */}
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <a href="/Details">
-              <img
-                src="/3rd.svg"
-                alt="Product 3"
-                className="w-full h-100 mb-4"
-              />
-            </a>
-          </div>
-        </div>
+    {/* Product 3 */}
+    <div className="bg-white p-4 shadow-lg rounded-lg">
+      <a href="/Details">
+        <Image
+          src="/3rd.svg"
+          alt="Product 3"
+          width={300} // Adjust as needed
+          height={100}
+          className="w-full h-100 mb-4"
+        />
+      </a>
+    </div>
+  </div>
 
-        {/* Hero Image */}
-        <div className="mt-12">
-          <img
-            src="/items.svg"
-            alt="Hero Image"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </div>
+  {/* Hero Image */}
+  <div className="mt-12">
+    <Image
+      src="/items.svg"
+      alt="Hero Image"
+      width={800} // Adjust as needed
+      height={400}
+      className="w-full h-auto object-cover"
+    />
+  </div>
+    </div>
     </div>
   );
 };

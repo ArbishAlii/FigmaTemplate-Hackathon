@@ -1,4 +1,6 @@
 import React from 'react';
+import Image
+ from 'next/image';
 import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaApplePay } from 'react-icons/fa';  // For payment icons
 
 const CheckoutPage = () => {
@@ -71,7 +73,13 @@ const CheckoutPage = () => {
                 
                 {/* Product Images and Summary */}
                 <div className="mb-6">
-                    <img src="buy.svg" alt="Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top" className="w-full mb-4" />
+                <Image
+  src="/buy.svg" // Ensure this file is inside the "public" folder
+  alt="Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top"
+  width={500} // Adjust width as needed
+  height={300} // Adjust height as needed
+  className="w-full mb-4"
+/>
                     <div className="flex justify-between mb-4">
                         <p className="font-semibold">Nike Dri-FIT ADV TechKnit Ultra Mens Short-Sleeve Running Top</p>
                         <span>₹ 3,895.00</span>
@@ -80,7 +88,13 @@ const CheckoutPage = () => {
                 </div>
 
                 <div className="mb-6">
-                    <img src="buy2.svg" alt="Nike Air Max 97 SE Men's Shoes" className="w-full mb-4" />
+                <Image
+  src="/buy2.svg" // Ensure this file is inside the "public" folder
+  alt="Nike Air Max 97 SE Men's Shoes"
+  width={500} // Adjust width as needed
+  height={300} // Adjust height as needed
+  className="w-full mb-4"
+/>
                     <div className="flex justify-between mb-4">
                         <p className="font-semibold">Nike Air Max 97 SE Mens Shoes</p>
                         <span>₹ 16,995.00</span>

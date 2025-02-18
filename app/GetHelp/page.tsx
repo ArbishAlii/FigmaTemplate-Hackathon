@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const HelpPage = () => {
   return (
@@ -25,8 +26,8 @@ const HelpPage = () => {
           <p className="text-black mb-6">
             We want to make buying your favourite Nike shoes and gear online fast and easy, and we accept the following payment options:
             Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro.
-            If you enter your PAN information at checkout, you’ll be able to pay for your order with PayTM or a local credit or debit card.
-            Nike Members can store multiple debit or credit cards in their profile for faster checkout. If you’re not already a Member, join us today.
+            If you enter your PAN information at checkout, you will be able to pay for your order with PayTM or a local credit or debit card.
+            Nike Members can store multiple debit or credit cards in their profile for faster checkout. If you are not already a Member, join us today.
           </p>
 
           {/* Buttons */}
@@ -48,7 +49,7 @@ const HelpPage = () => {
 
           <div className="text-black mb-4">
             <p><strong>Can I pay for my order with multiple methods?</strong></p>
-            <p>No, payment for Nike orders can’t be split between multiple payment methods.</p>
+            <p>No, payment for Nike orders can not be split between multiple payment methods.</p>
           </div>
 
           <div className="text-black mb-4">
@@ -57,8 +58,8 @@ const HelpPage = () => {
           </div>
 
           <div className="text-black mb-4">
-            <p><strong>Why don’t I see Apple Pay as an option?</strong></p>
-            <p>To see Apple Pay as an option in the Nike App or on Nike.com, you’ll need to use a compatible Apple device running the latest OS, be signed in to your iCloud account, and have a supported card in your Wallet. Additionally, you’ll need to use Safari to use Apple Pay on Nike.com.</p>
+            <p><strong>Why do not I see Apple Pay as an option?</strong></p>
+            <p>To see Apple Pay as an option in the Nike App or on Nike.com, you will need to use a compatible Apple device running the latest OS, be signed in to your iCloud account, and have a supported card in your Wallet. Additionally, you will need to use Safari to use Apple Pay on Nike.com.</p>
           </div>
 
           <div className="mt-4 text-black">
@@ -70,11 +71,13 @@ const HelpPage = () => {
 
         {/* Image on the Right (30%) */}
         <div className="w-full sm:w-3/12 mb-6 sm:mb-0 sm:pl-10 pl-48 ml-36">
-          <img
-            src="side.svg"
-            alt="Nike Payment Options"
-            className="w-full h-auto object-cover rounded-md"
-          />
+        <Image
+  src="/side.svg" // Ensure this file is inside the "public" folder
+  alt="Nike Payment Options"
+  width={500} // Adjust as needed
+  height={300} // Adjust as needed
+  className="w-full h-auto object-cover rounded-md"
+/>
         </div>
       </div>
 

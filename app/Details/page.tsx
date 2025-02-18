@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import ShoppingCartIcon from '@heroicons/react/24/outline/ShoppingCartIcon';
 import React from 'react';
 // import { useRouter } from 'next/router';
@@ -10,11 +11,13 @@ const CartPage = () => {
     <div className="flex flex-col lg:flex-row p-6 max-w-screen-lg mx-auto">
       {/* Hero Image Section */}
       <div className="w-full lg:w-1/2 pr-6 mb-6 lg:mb-0">
-        <img
-          src="img.png"
-          alt="Nike Air Force 1"
-          className="w-full h-[300px] md:h-[400px] object-cover rounded-lg"
-        />
+      <Image
+      src="/img.png" // Use a relative path from the public folder
+      alt="Nike Air Force 1"
+      width={600} // Set appropriate width
+      height={400} // Set appropriate height
+      className="w-full h-[300px] md:h-[400px] object-cover rounded-lg"
+    />
       </div>
 
       {/* Product Info Section */}

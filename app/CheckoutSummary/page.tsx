@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CheckoutSummary = () => {
     return (
@@ -11,11 +12,13 @@ const CheckoutSummary = () => {
                     <div className="flex w-full">
                         {/* Product Image */}
                         <div className="w-1/3">
-                            <img
-                                src="/buy.svg" // Replace with actual product image
-                                alt="Nike Product"
-                                className="w-full h-auto object-cover rounded-md"
-                            />
+                        <Image
+      src="/buy.svg" // Ensure this file is inside the "public" folder
+      alt="Nike Product"
+      width={500} // Set appropriate width
+      height={500} // Set appropriate height
+      className="w-full h-auto object-cover rounded-md"
+    />
                         </div>
                         {/* Product Details */}
                         <div className="w-2/3 pl-4">
@@ -36,11 +39,13 @@ const CheckoutSummary = () => {
                     <div className="flex w-full">
                         {/* Product Image */}
                         <div className="w-1/3">
-                            <img
-                                src="/nike max.jpg" // Replace with actual product image
-                                alt="Nike Product"
-                                className="w-full h-auto object-cover rounded-md"
-                            />
+                        <Image
+      src="/nike max.jpg" // Ensure this file is inside the "public" folder
+      alt="Nike Product"
+      width={500} // Adjust as needed
+      height={500} // Adjust as needed
+      className="w-full h-auto object-cover rounded-md"
+    />
                         </div>
                         {/* Product Details */}
                         <div className="w-2/3 pl-4">

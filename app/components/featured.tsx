@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 
 export const Featured = () => {
     return (
@@ -7,54 +8,64 @@ export const Featured = () => {
             {/* Image 1 */}
             <div className="w-full aspect-w-16 aspect-h-9 mb-4">
                 <a href="#" className="block w-full h-full">
-                    <img
-                        src="/Frame2.svg"
-                        alt="Hero Image"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
+                <Image
+      src="/Frame2.svg" // Ensure this file is inside the "public" folder
+      alt="Hero Image"
+      width={800} // Adjust width as needed
+      height={600} // Adjust height as needed
+      className="w-full h-full object-cover rounded-lg"
+    />
                 </a>
             </div>
 
             {/* Image 2 */}
             <div className="w-full aspect-w-16 aspect-h-9 mb-4">
                 <a href="/CheckoutSummary" className="block w-full h-full">
-                    <img
-                        src="/Frame3.svg"
-                        alt="Hero Image"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
+                <Image
+      src="/Frame3.svg" // Ensure this file is inside the "public" folder
+      alt="Hero Image"
+      width={800} // Adjust width as needed
+      height={600} // Adjust height as needed
+      className="w-full h-full object-cover rounded-lg"
+    />
                 </a>
             </div>
 
             {/* Image 3 */}
             <div className="w-full aspect-w-16 aspect-h-9 mb-4">
                 <a href="/AnotherPage" className="block w-full h-full">
-                    <img
-                        src="/frame5.svg"
-                        alt="Hero Image"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
+                <Image
+      src="/Frame5.svg" // Ensure this file is inside the "public" folder
+      alt="Hero Image"
+      width={800} // Adjust width as needed
+      height={600} // Adjust height as needed
+      className="w-full h-full object-cover rounded-lg"
+    />
                 </a>
             </div>
 
             {/* Image 4 */}
             <div className="mb-4">
                 <a href="/AnotherPage" className="block w-full h-full">
-                    <img
-                        src="/frame4.svg"
-                        alt="Hero Image"
-                        className="w-full h-full object-cover rounded-lg"
-                    />
+                <Image
+      src="/Frame4.svg" // Ensure this file is inside the "public" folder
+      alt="Hero Image"
+      width={800} // Adjust width as needed
+      height={600} // Adjust height as needed
+      className="w-full h-full object-cover rounded-lg"
+    />
                 </a>
             </div>
 
             
             <div className="flex justify-center items-center mt-10">
-                <img
-                    src="/frame6.svg"
-                    alt="Hero Image"
-                    className="w-[90%] max-w-[300px] sm:max-w-[400px] md:max-w-[500px] h-auto object-contain rounded-lg"
-                />
+            <Image
+      src="/frame6.svg" // Ensure this file is inside the "public" folder
+      alt="Hero Image"
+      width={800} // Adjust width as needed
+      height={600} // Adjust height as needed
+      className="w-full h-full object-cover rounded-lg"
+    />
             </div>
         </div>
     )
