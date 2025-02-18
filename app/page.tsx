@@ -96,7 +96,7 @@ console.log(products, "products array")
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {products.map((product) => (
-   <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
+   <div key={product._id} className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
    <Link href={`/product/${product._id}`}>
    <Image
     src={product.image || "/default-image.jpg"} // Provide a fallback image path if no image is available

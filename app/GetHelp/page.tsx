@@ -83,7 +83,7 @@ const HelpPage = () => {
 
       {/* Additional Links */}
       <div className="py-6 text-center text-blue-600">
-        <p><a href="#">WHAT ARE NIKE'S DELIVERY OPTIONS?</a></p>
+        <p><a href="#">WHAT ARE NIKE DELIVERY OPTIONS?</a></p>
         <p><a href="#">HOW DO I GET FREE DELIVERY ON NIKE ORDERS?</a></p>
       </div>
     </div>
