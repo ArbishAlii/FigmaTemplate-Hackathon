@@ -5,7 +5,7 @@ const client = sanityClientFactory({
   dataset: "production", // Replace with your actual dataset name
   useCdn: true,
   apiVersion: "2023-10-10",
-  token:"SANITY_API_TOKEN"
+  token:"skkNazx1FYexqf9UhnmJIJqXld3QIglr3ODdrb76Q4Wg3FzKqfuRDGoxboYngzMgeuxvmFXFAQzmcmTlzgNJx0RLhluz1NafovRobUaV2YoIp7lAm5yE8U4qhgm9LgiG6H4cirxRhg02YADKOB1gqpAjkzfu9FoaOu2H2Tw3GtcXCTLouXEJ"
 });
 
 
@@ -14,6 +14,7 @@ const client = sanityClientFactory({
 
 export async function getProducts() {
   const externalUrl = "https://template-03-api.vercel.app/api/products"; 
+  // const externalUrl = "https://fakestoreapi.com/products/1"; 
 
   try {
     console.log("Fetching products from external URL...");
