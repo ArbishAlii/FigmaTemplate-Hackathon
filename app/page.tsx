@@ -99,7 +99,7 @@ console.log(products, "products array")
    <div key={product._id} className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
    <Link href={`/product/${product._id}`}>
    <Image
-    src={product.image || "/default-image.jpg"} // Provide a fallback image path if no image is available
+    src={product.imageUrl || "/default-image.jpg"} // Provide a fallback image path if no image is available
     alt={product.name || "Product Image"}
     className="w-60"
     height={600}
